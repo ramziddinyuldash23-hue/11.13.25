@@ -28,7 +28,7 @@ def check(index):
     todos[index]['done'] = not todos[index]['done']
     return redirect(url_for('index'))
 
-@app.route('/delete/<int:index>')
+@app.route('/delete/<int:ind ex>')
 def delete(index):
     del todos[index]
     return redirect(url_for('index'))
